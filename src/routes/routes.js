@@ -17,8 +17,6 @@ router.use((req, res, next) => {
     next();
 });
 
-router.get('/wrap', controller.wrap)
-
 //listen to 404 request
 router.get("*", (req, res) =>{
     let tm = req.url
