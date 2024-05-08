@@ -16,7 +16,7 @@ router.use((req, res, next) => {
     res.append('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
-
+router.get("/wrap", controller.wrap) //wrap controller
 //listen to 404 request
 router.get("*", (req, res) =>{
     let tm = req.url
