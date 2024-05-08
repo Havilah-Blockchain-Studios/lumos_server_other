@@ -1,5 +1,5 @@
 //to wrap tokens user
-exports.wrap = (req, res) => {
+exports.wrap = async (req, res) => {
     //create new wallet address
     try{  
         req = req.query;
